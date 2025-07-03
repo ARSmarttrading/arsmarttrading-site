@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import Image from 'next/image';
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -9,7 +10,16 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-white shadow-md">
       <nav className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-        <div className="text-xl font-bold text-blue-700">AR Smart Trading</div>
+        <div className="flex items-center">
+          <Image
+            src="/logo.png"
+            alt="AR Smart Trading"
+            width={40}
+            height={40}
+            className="h-8 w-auto md:h-10 mr-2"
+          />
+          <span className="text-xl font-bold text-blue-700 hidden sm:block">AR Smart Trading</span>
+        </div>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-6 text-sm font-medium text-gray-700">

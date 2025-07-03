@@ -20,7 +20,7 @@ export default function Footer() {
               Email: <a href="mailto:contact@arsmarttrading.com" className="hover:text-white">contact@arsmarttrading.com</a>
             </p>
             <p className="text-gray-400">
-              WhatsApp: <a href="https://wa.me/1234567890" className="hover:text-white" target="_blank" rel="noopener noreferrer">Chat with us</a>
+              WhatsApp: <a href="https://wa.me/919876543210?text=Hi%20I'm%20interested%20in%20the%20AR%20Smart%20Trading%20course" className="hover:text-white" target="_blank" rel="noopener noreferrer">Chat with us</a>
             </p>
           </div>
           

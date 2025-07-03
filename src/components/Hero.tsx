@@ -24,7 +24,7 @@ export default function Hero() {
       
       <motion.a
         href="#"
-        className="bg-white text-blue-700 font-semibold py-3 px-6 rounded-full shadow-lg hover:scale-105 transition-transform"
+        className="bg-white text-blue-700 font-semibold py-4 px-8 rounded-full shadow-lg hover:scale-105 transition-transform text-lg"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >
