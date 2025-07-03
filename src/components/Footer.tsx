@@ -17,7 +17,7 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">Contact Us</h3>
             <p className="text-gray-400 mb-2">
-              Email: <a href="mailto:contact@arsmarttrading.com" className="hover:text-white">contact@arsmarttrading.com</a>
+              Email: <a href="mailto:arsmarttradingedu@gmail.com" className="hover:text-white">arsmarttradingedu@gmail.com</a>
             </p>
             <p className="text-gray-400">
               WhatsApp: <a href="https://wa.me/919876543210?text=Hi%20I'm%20interested%20in%20the%20AR%20Smart%20Trading%20course" className="hover:text-white" target="_blank" rel="noopener noreferrer">Chat with us</a>

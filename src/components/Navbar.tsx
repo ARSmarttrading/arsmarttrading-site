@@ -18,7 +18,7 @@ export default function Navbar() {
             height={40}
             className="h-8 w-auto md:h-10 mr-2"
           />
-          <span className="text-xl font-bold text-blue-700 hidden sm:block">AR Smart Trading</span>
+          <span className="text-xl font-bold text-blue-700">AR Smart Trading</span>
         </div>
 
         {/* Desktop Menu */}
