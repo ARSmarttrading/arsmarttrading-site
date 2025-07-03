@@ -1,37 +1,35 @@
 'use client';
-import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <div className="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white">
-      <div className="container mx-auto px-6 py-24">
-        <div className="flex flex-col items-center text-center">
-          <div className="mb-8">
-            <Image
-              src="/logo.png"
-              alt="AR Smart Trading Logo"
-              width={120}
-              height={120}
-              className="rounded-full"
-            />
-          </div>
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            Master the Stock Market
-          </h1>
-          <p className="text-xl md:text-2xl mb-8 max-w-2xl">
-            Learn trading strategies from experts and start your journey to financial freedom
-          </p>
-          <Link
-            href="/signup"
-            className="bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-50 transition duration-300"
-          >
-            Join Now
-          </Link>
-        </div>
-      </div>
-      <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent"></div>
-    </div>
+    <section className="text-center py-20 bg-gradient-to-b from-blue-800 to-blue-600 text-white">
+      <motion.h1
+        className="text-4xl md:text-6xl font-bold mb-4"
+        initial={{ opacity: 0, y: -40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
+        Master the Stock Market
+      </motion.h1>
+      
+      <motion.p
+        className="text-lg md:text-xl mb-8"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.4, duration: 0.8 }}
+      >
+        Learn trading strategies from experts and start your journey to financial freedom
+      </motion.p>
+      
+      <motion.a
+        href="#"
+        className="bg-white text-blue-700 font-semibold py-3 px-6 rounded-full shadow-lg hover:scale-105 transition-transform"
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+      >
+        Join Now
+      </motion.a>
+    </section>
   );
 } 
