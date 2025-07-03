@@ -30,7 +30,7 @@ export default function Testimonials({ id }: { id?: string }) {
             transition={{ duration: 0.6, delay: index * 0.2 }}
             viewport={{ once: true }}
           >
-            <p className="text-gray-300 mb-4">"{testimonial.review}"</p>
+            <p className="text-gray-300 mb-4">&ldquo;{testimonial.review}&rdquo;</p>
             <p className="font-semibold text-blue-400">- {testimonial.name}</p>
           </motion.div>
         ))}
